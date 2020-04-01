@@ -25,7 +25,8 @@ import {
 
 import WheelOfFortune from 'react-native-wheel-of-fortune';
 
-const participants = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11,12,13]
+const participants = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
 const rewards = participants.map(e => ({ uri: `https://i.pravatar.cc/300?$1` }))
 
 class TestOne extends Component {
