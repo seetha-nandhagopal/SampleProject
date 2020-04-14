@@ -9,8 +9,13 @@ import React, { Component } from 'react';
 import { NavigationContainer,createSwitchNavigator} from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import TestOne from './Screens/TestOne';
-import TestTwo from './Screens/TestTwo';
+// import TestOne from './Screens/TestOne';
+import AnimationTest from './Screens/AnimationTest';
+// import TestTwo from './Screens/TestTwo';
+// import Test from './Screens/Test';
+// import Sample from './Screens/Sample';
+// import Loop from './Screens/Loop';
+
 
 console.disableYellowBox = true;
 const Stack = createStackNavigator();
@@ -20,8 +25,13 @@ export default class App extends Component {
   render() {
       HomeStack = () =>
           <Stack.Navigator screenOptions={{ headerShown: false,  }}>
-                <Stack.Screen name="TestOne" component={TestOne} />
-                <Stack.Screen name="TestTwo" component={TestTwo} />
+                            {/* <Stack.Screen name="Loop" component={Loop} /> */}
+
+              <Stack.Screen name="AnimationTest" component={AnimationTest} />
+               {/* <Stack.Screen name="Sample" component={Sample} /> */}
+                {/* <Stack.Screen name="Test" component={Test} /> */}
+                {/* <Stack.Screen name="TestOne" component={TestOne} /> */}
+                {/* <Stack.Screen name="TestTwo" component={TestTwo} /> */}
                 </Stack.Navigator>
 return (
   <NavigationContainer>
